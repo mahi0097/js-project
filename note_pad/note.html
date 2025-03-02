@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+</head>
+<body>
+    <div class="container-box">
+    <div class="container">
+        <h1>Notes</h1>
+        <img src="png-transparent-note-taking-reading-writing-taking-miscellaneous-angle-text-thumbnail.png" class="note_img">
+    </div>
+    <button class="note" onclick="notes_generate()">Note</button>
+       </div>
+    </div>
+    <style>
+        body{
+            padding: 0%;
+            margin: 0%;
+            background: linear-gradient(240deg, #e718a2, #dce6cd);
+        }
+        .container{
+            display: flex;
+        }
+        .container h1 {
+            margin-top: 5rem;
+            margin-left : 4rem ;
+            gap: 1rem;
+        }
+        
+        .container .note_img{
+            height: 4rem;
+            width: 4rem;
+            color: #e718a2;
+            margin-top: 5rem;
+            margin-left : 1rem ;
+            gap: 1rem;
+            font-size: 3rem;
+            border-radius: 1rem;
+        }
+        .notes{
+            display: flex;
+            flex-wrap: wrap;
+
+        }.notes {
+    position: relative; /* This makes the delete button position relative to each note */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+        .note{
+            height: 3rem;
+            width: 6rem;
+            border-radius: 1rem;
+            margin-left: 2rem;
+            
+        }
+        .input {
+    height: 15rem;
+    width: 27rem;
+    margin-top: 3rem;
+    border-radius: 2rem;
+    font-size: 1rem; /* Adds space inside the box */
+    text-align: left; /* Aligns text to the left */
+    vertical-align: top; /* Ensures text starts from top (not needed for textarea) */
+    resize: none; /* Prevents resizing */
+    border: none;
+    outline: none;
+    display:flex; /* Ensures proper block behavior */
+    margin-left: 2rem;
+    margin-right: 20rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #dce6cd;
+}
+.delete_img {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    position: absolute; /* Place it inside each note */
+    right: 52rem;
+    bottom: 2rem;
+    cursor: pointer;
+}
+
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
